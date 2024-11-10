@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to Our Restaurant!</h1>
+    </header>
+
+    <!-- Main Content Section: CSS Grid Layout -->
+    <main class="grid-layout">
+        <!-- Featured Section -->
+        <section class="featured">
+            <h2>Enjoy Delicious Food!</h2>
+            <p>Experience the finest dishes, crafted with love and served with a smile.</p>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu">
+            <h2>Our Menu</h2>
+            <ul>
+                <li>Pizza - $12</li>
+                <li>Burger - $8</li>
+                <li>Pasta - $10</li>
+                <li>Salad - $6</li>
+            </ul>
+       
+    </main>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- To-Do List Section -->
+    <section class="todo-section">
+        <h2>To-Do List</h2>
+        <input type="text" id="taskInput" placeholder="Add a new task">
+        <button id="addTaskBtn">Add Task</button>
+
+        <ul id="taskList"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
